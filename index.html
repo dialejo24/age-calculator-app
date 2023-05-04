@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <script src="JS/script.js" defer></script>
-  <title>Frontend Mentor | Age calculator app</title>
-</head>
-<body>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="JS/script.js" defer></script>
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="input">
+        <div class="day">
+          <label for="day">Day</label>
+          <input type="month" id="day" name="day" />
+          <span class="error-msg"></span>
+        </div>
+        <div class="month">
+          <label for="month">Month</label>
+          <input type="number" name="month" id="month" />
+          <span class="error-msg"></span>
+        </div>
+        <div>
+          <label for="year">Year</label>
+          <input type="number" name="year" id="year" />
+          <span class="error-msg"></span>
+        </div>
+        <div class="arrow-img">
+          <img src="assets/images/icon-arrow.svg" alt="arrow-like icon" />
+        </div>
+      </div>
+      <div class="output">
+        <p class="output__years"><span class="years__result">--</span> years</p>
+        <p class="output__months">
+          <span class="months__result">--</span> months
+        </p>
+        <p class="output__days"><span class="days__result">--</span> days</p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>
