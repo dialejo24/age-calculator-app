@@ -1,145 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
 
 :root {
-    --purple: hsl(259, 100%, 65%);
-    --light-red: hsl(0, 100%, 67%);
-    --white:  hsl(0, 0%, 100%);
-    --off-white: hsl(0, 0%, 94%);
-    --light-grey: hsl(0, 0%, 86%);
-    --smokey-grey: hsl(0, 1%, 44%);
-    --off-black: hsl(0, 0%, 8%);
-
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
 }
-
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: var(--off-white);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--off-white);
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .calculator {
-    background-color: var(--white);
-    padding:2em;
-    width:90%;
-    max-width: 720px;
-    border-radius: 25px 25px 25% 25px;
+  background-color: var(--white);
+  padding: 2em;
+  width: 90%;
+  max-width: 720px;
+  border-radius: 25px 25px 25% 25px;
 }
 
 label {
-    text-transform: uppercase;
-    color: var(--smokey-grey);
-    font-weight: 400;
-    font-size: .75rem;
-    letter-spacing: 3px;
-    display: block;
-    margin-bottom: .5em;
+  text-transform: uppercase;
+  color: var(--smokey-grey);
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 0.5em;
 }
 
 input[type="number"]::placeholder {
-    color: var(--smokey-grey);
+  color: var(--smokey-grey);
 }
 
 input[type="number"]:focus {
-    outline: 1px solid var(--purple);
+  outline: 1px solid var(--purple);
 }
 
 input[type="number"] {
-    color: var(--off-black);
-    font-weight: 800;
-    width:100%;
-    max-width: 4.6em;
-    appearance: textfield;
-    border: 1px solid var(--light-grey);
-    padding: .5rem .7em;
-    border-radius: 7px;
-    font-size: clamp(.9rem, .5rem + 3vw,2rem);
-    font-family: 'Poppins', sans-serif;
+  color: var(--off-black);
+  font-weight: 800;
+  width: 100%;
+  max-width: 4.6em;
+  appearance: textfield;
+  border: 1px solid var(--light-grey);
+  padding: 0.5rem 0.7em;
+  border-radius: 7px;
+  font-size: clamp(0.9rem, 0.5rem + 3vw, 2rem);
+  font-family: "Poppins", sans-serif;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
+  -webkit-appearance: none;
 }
 
 button {
-    background-color: var(--purple);
-    border:none;
-    padding:1em;
-    border-radius: 50%;
+  background-color: var(--purple);
+  border: none;
+  padding: 1em;
+  border-radius: 50%;
 }
 
 input,
 button {
-    cursor:pointer;
+  cursor: pointer;
 }
 
 .input {
-    display: flex;
-    gap:1em;
-    position: relative;
-    border-bottom: 1px solid var(--light-grey);
-    padding-bottom: 3.5em;
+  display: flex;
+  gap: 1em;
+  position: relative;
+  border-bottom: 1px solid var(--light-grey);
+  padding-bottom: 3.5em;
 }
 
-.btn{
-    position: absolute;
-    bottom:-25%;
-    right:40%;
+.btn {
+  position: absolute;
+  bottom: -25%;
+  right: 40%;
 }
 
 .btn img {
-    width:2em;
+  width: 2em;
 }
 
 .output {
-    margin-top: 3em;
+  margin-top: 3em;
 }
 
 .output > p {
-    font-size: clamp(3rem, 1rem + 8vw, 5.5rem);
-    font-style: italic;
-    font-weight: 800;
-    line-height: 1.2;
+  font-size: clamp(3rem, 1rem + 8vw, 5.5rem);
+  font-style: italic;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .output span {
-    color: var(--purple);
+  color: var(--purple);
 }
 
-@media(min-width: 500px) {
-    .calculator {
-        padding: 2em 3em;
-    }
-    .btn {
-        right: 0;
-    }
-    .btn img {
-        width: 100%;
-    }
+@media (min-width: 500px) {
+  .calculator {
+    padding: 2em 3em;
+  }
+  .btn {
+    right: 0;
+  }
+  .btn img {
+    width: 100%;
+  }
 }
 
-.attribution { 
-    font-size: 11px; text-align: center; 
+.attribution {
+  font-size: 11px;
+  text-align: center;
 }
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
