@@ -60,6 +60,48 @@ input[type="number"]:focus {
   outline: 1px solid var(--purple);
 }
 
+input[type="number"] + span {
+  position: relative;
+  display: block;
+}
+
+.redLabel {
+  color: var(--light-red);
+}
+
+.redOutline {
+  outline: 1px solid var(--light-red);
+}
+
+.error-msg::after {
+  color: var(--light-red);
+  font-size: 0.75rem;
+  font-style: italic;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.required-msg::after {
+  content: "This field is required";
+}
+
+.invalidDay-msg::after {
+  content: "Must be a valid day";
+}
+
+.invalidMonth-msg::after {
+  content: "Must be a valid month";
+}
+
+.invalidYear-msg::after {
+  content: "Must be in the past";
+}
+
+.invalidDate-msg::after {
+  content: "Must be a valid date";
+}
+
 input[type="number"] {
   color: var(--off-black);
   font-weight: 800;
